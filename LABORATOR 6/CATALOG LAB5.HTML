@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="CATALOG LAB5.CSS">
+<title>Catalog Studenti</title>
+</head>
+<body>
+
+<h1>Catalog Studenti</h1>
+<p>Grupa 2115</p>
+<img src="copertare-catalog-scolar-2.jpg" width="250" height="250">
+<br>
+<a href="file:///C:/Users/Marius%20PC/Desktop/LABORATOR%206/Dobrea%20Marius%20Dorian/LABORATOR5.html">Dobrea Marius Dorian</a>
+<br> 
+<a href="file:///C:/Users/Marius%20PC/Desktop/LABORATOR%206/Iulian%20Teodor%20Goia/test.html">Iulian Teodor goia</a>
+<br>
+<a href="file:///C:/Users/Marius%20PC/Desktop/LABORATOR%206/Manolache%20Bogdan/Fisa%20laborator%205%20Manolache%20Bogdan..html">Manolache Bogdan Gabriel</a>
+<br>
+<a href="file:///C:/Users/Marius%20PC/Desktop/LABORATOR%206/Narcis%20Mihail%20Copacel/Profil%20Cop%C4%83cel%20Narcis-Mihail.html">Narcis Mihail Copacel</a>
+<br>
+<a href="file:///C:/Users/Marius%20PC/Desktop/LABORATOR%206/Thomas%20Valentin%20Bontya/Profil.html">Thomas Valentin Bontya</a>
+
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 /5</div>
+  <img src="poza profil.jpg" style="width:30%">
+  <div class="text"><a href="file:///C:/Users/Marius%20PC/Desktop/LABORATOR%206/Dobrea%20Marius%20Dorian/LABORATOR5.html">Dobrea Marius Dorian</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="PIM_6501.jpg" style="width:30%">
+  <div class="text"><a href="file:///C:/Users/Marius%20PC/Desktop/LABORATOR%206/Iulian%20Teodor%20Goia/test.html">Iulian Goia Teodor</div>
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="Manolache Bogdan.jpg" style="width:30%">
+  <div class="text"><a href="file:///C:/Users/Marius%20PC/Desktop/LABORATOR%206/Manolache%20Bogdan/Fisa%20laborator%205%20Manolache%20Bogdan..html">Manolache Bogdan</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="Captură de ecran 2020-10-29 123716.png" style="width:30%">
+  <div class="text"><a href="file:///C:/Users/Marius%20PC/Desktop/LABORATOR%206/Narcis%20Mihail%20Copacel/Profil%20Cop%C4%83cel%20Narcis-Mihail.html">Copacel Narcis</div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="thomas.jpg" style="width:30%">
+  <div class="text"><a href="file:///C:/Users/Marius%20PC/Desktop/LABORATOR%206/Thomas%20Valentin%20Bontya/Profil.html">Thomas Valentin Bontya</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+   <span class="dot"></span> 
+</div>
+
+ <script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

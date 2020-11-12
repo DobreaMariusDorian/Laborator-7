@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ table, th, td {
+  border: 1px solid black;
+  background-color:green;
+}
+body{
+	background-color: Orange ;
+}
+h1 {
+  color: maroon;
+  margin-left: 40px;
+  
+}
+p{ color:yellow;
+
+}
+
+p.normal {
+  font-style: italic;
+}
+
+ul.a {
+  list-style-position:outside;
+  background-color:purple;
+}
+img {
+  border-radius: 65%;
+}
+</style>
+<script>
+function myfunction(){
+document.getElementById("job").innerHTML = "Inginer proiectant Dobrea Marius Dorian";
+document.getElementById("00").innerHTML = "Idealuri";
+document.getElementById("02").innerHTML = "Obiective realiste";
+document.getElementById("10").innerHTML = "Sa iau bursa";
+document.getElementById("11").innerHTML = "Anul 1";
+document.getElementById("12").innerHTML = "Sa nu intru la taxa";
+document.getElementById("20").innerHTML = "Intership";
+document.getElementById("21").innerHTML = "Anul 2";
+document.getElementById("22").innerHTML = "Sa ma angajez part-time";
+document.getElementById("30").innerHTML = "Sa ma duc in Work and Travel";
+document.getElementById("31").innerHTML = "Anul 3";
+document.getElementById("32").innerHTML = "Sa particip la volunatariate";
+document.body.style.backgroundColor = "red";
+document.getElementById("poza").src = "Poza2.jpg";
+document.getElementById("poza").width = "300";
+document.getElementById("poza").opacity= "0.5";
+}
+function varsta() {
+        var azi = new Date;
+        var varstaMea;
+        var anNasc = document.getElementById("varsta").innerHTML;
+        var anCurent = azi.getFullYear();
+
+        varstaMea = anCurent - anNasc;
+        document.getElementById("varsta").innerHTML = varstaMea;
+        }
+
+</script>
+<title>Descrierea propriei persoane : </title>
+</head>
+<body>
+<h1 id=job> Dobrea Marius-Dorian.</h1>
+<p class="normal">dobreamariusdorian10@gmail.com</p>
+<p class="normal">O poza cu mine: </p>
+<img id="poza" src="poza profil.jpg" width="200" height="200">
+<p class="normal">Domiciuliu:Jud.Galati,Mun.Galati,Str:Constantin Levaditti nr 1,Bl Nufar9 sc1 apartament:19</p>
+<p class="normal">Un text/citat reprezentativ pentru asteptarile legate de educatie:"Viitorul consta in tehnologizare"<p>
+<p onmouseover="varsta()" id="varsta">2001</p>
+<h2>Lista de discipline:<h2>
+<table>
+ <tr>
+ <th id=00>Disciplina</th>
+ <th id=01>Anul</th>
+ <th id=02>LINK</th>
+ </tr>
+ <tr>
+ <th id=10>Analiza Matematic</th>
+ <th id=11>Anul 1</th>
+ <th id=12>https://etti.utcluj.ro/files/FiseDisciplina/EaRo/01.pdf</th>
+ </tr>
+ <th id=20>Algebră liniară</th>
+ <th id=21> Anul 1</th>
+ <th id=22>https://etti.utcluj.ro/files/FiseDisciplina/EaRo/02.pdf</th>
+ <tr>
+ <th id=30>Sport 1</th>
+ <th id=31>Anul 1</th>
+ <th id=32>https://etti.utcluj.ro/files/FiseDisciplina/EaRo/07.pdf</th>
+ </tr>
+ </table>
+<ul class="a">Hobby-urile mele sunt:
+  <li>Jocurile pe Calculator</li>
+  <li>Basketball-ul</li>
+  <li>Inotul</li>
+  <li>Alergatul prin parcuri</li>
+  <li>Imi place sa gatesc</li>
+</ul>
+<a href="file:///C:/Users/Marius%20PC/Desktop/Laborator%205/CATALOG%20LAB5.HTML."> Inapoi la catalog </a>
+</body>
+
+<button type="button" onclick="myfunction()">Alta Viata</button>
+
+</html>
